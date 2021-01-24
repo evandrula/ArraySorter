@@ -7,7 +7,7 @@ public class ArraySorter {
     }
 
     //Bubble Sort
-    public static int[] bubbleSort(int[] inputArray) {
+    public static void  bubbleSort(int[] inputArray) {
         for(int i = 0; i< inputArray.length; i++){
             for(int j = 0; j < inputArray.length-i-1; j++){
                 if(inputArray[j] > inputArray[j+1]){
@@ -15,11 +15,10 @@ public class ArraySorter {
                 }
             }
         }
-        return inputArray;
     }
 
     //Selection Sort
-    public static int[] selectionSort(int[] inputArray){
+    public static void selectionSort(int[] inputArray){
         int min;
         for (int i = 0; i < inputArray.length-1; i++){
             min = i;
@@ -29,7 +28,6 @@ public class ArraySorter {
             }
             switchElements(inputArray, min, i);
         }
-        return inputArray;
     }
-}
 
+}
