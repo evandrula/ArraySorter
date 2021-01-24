@@ -29,5 +29,22 @@ public class ArraySorter {
             switchElements(inputArray, min, i);
         }
     }
-
+    
+        //Insertion Sort
+    public static void insertionSort(int[] inputArray){
+        for(int i = 2; i < inputArray.length; i++){
+            int key = inputArray[i];
+            int j = i-1;
+            while(j > 0 && inputArray[j] > key){
+                inputArray[j+1] = inputArray[j];
+                --j;
+            }
+            inputArray[j+1] = key;
+            for (int a:
+                 inputArray) {
+                System.out.print(a+" ");
+            }
+            System.out.println();
+        }
+    }
 }
